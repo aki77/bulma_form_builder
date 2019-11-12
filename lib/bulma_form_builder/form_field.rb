@@ -6,7 +6,7 @@ module BulmaFormBuilder
       name = args.first
       options = args.extract_options!
 
-      content_tag(:div, class: 'field') do
+      content_tag(:div, class: form_field_classes(options)) do
         concat field_label(name, options) unless options[:hide_label]
         concat field_control(&block)
         concat field_help(name, options)
@@ -31,6 +31,12 @@ module BulmaFormBuilder
       classes = %w[label]
       classes << 'required' if options[:required]
       label(name, options[:label], class: classes)
+    end
+
+    def form_field_classes(options)
+      classes = %w[field]
+      classes << options.delete(:wrapper_class) if options[:wrapper_class].present?
+      classes
     end
   end
 end
