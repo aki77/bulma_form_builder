@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    bulma_form_builder (0.1.0)
+    bulma_form_builder (0.1.1)
       rails (>= 5.2.0)
 
 GEM
