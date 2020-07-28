@@ -1,6 +1,7 @@
 require 'bulma_form_builder/inputs/base'
 require 'bulma_form_builder/inputs/check_box'
 require 'bulma_form_builder/inputs/collection_check_boxes'
+require 'bulma_form_builder/inputs/collection_radio_buttons'
 require 'bulma_form_builder/inputs/date_field'
 require 'bulma_form_builder/inputs/email_field'
 require 'bulma_form_builder/inputs/month_field'
