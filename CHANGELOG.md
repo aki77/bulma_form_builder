@@ -1,3 +1,7 @@
+## 0.2.1
+
+- Support the check_box helpter option
+
 ## 0.2.0
 
 - Add collection_radio_buttons
