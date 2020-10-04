@@ -3,7 +3,7 @@ module BulmaFormBuilder
     module Base
       extend ActiveSupport::Concern
 
-      ELEMENTS_WITH_INPUT_CLASS = %i[email_field number_field password_field text_field].freeze
+      ELEMENTS_WITH_INPUT_CLASS = %i[email_field url_field number_field password_field text_field].freeze
 
       class_methods do
         def bulma_field(field_name)

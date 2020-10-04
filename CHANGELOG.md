@@ -1,3 +1,7 @@
+## 0.2.2
+
+- Add url_field
+
 ## 0.2.1
 
 - Support the check_box helpter option
