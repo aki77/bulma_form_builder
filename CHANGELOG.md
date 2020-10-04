@@ -1,3 +1,8 @@
+## 0.3.0
+
+- Add url_field
+- Update dependency
+
 ## 0.2.1
 
 - Support the check_box helpter option

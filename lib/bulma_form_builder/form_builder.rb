@@ -16,6 +16,7 @@ module BulmaFormBuilder
 
     include BulmaFormBuilder::Inputs::Base
     include BulmaFormBuilder::Inputs::EmailField
+    include BulmaFormBuilder::Inputs::UrlField
     include BulmaFormBuilder::Inputs::DateField
     include BulmaFormBuilder::Inputs::TimeField
     include BulmaFormBuilder::Inputs::MonthField
