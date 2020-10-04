@@ -1,6 +1,7 @@
-## 0.2.2
+## 0.3.0
 
 - Add url_field
+- Update dependency
 
 ## 0.2.1
 
