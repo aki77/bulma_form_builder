@@ -29,7 +29,7 @@ module BulmaFormBuilder
     include BulmaFormBuilder::Inputs::CollectionCheckBoxes
     include BulmaFormBuilder::Inputs::CollectionRadioButtons
 
-    delegate :content_tag, :capture, :concat, to: :@template
+    delegate :content_tag, :capture, :concat, :tag, to: :@template
 
     def initialize(object_name, object, template, options)
       @layout = options[:layout]

@@ -1,6 +1,7 @@
 ## 0.3.1
 
 - Update dependency
+- Support for `tag` helper
 
 ## 0.3.0
 
