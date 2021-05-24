@@ -1,6 +1,7 @@
 ## 0.4.0
 
 - Update dependency
+- Fix error display in check_box
 
 ## 0.3.1
 

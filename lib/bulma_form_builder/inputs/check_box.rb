@@ -15,14 +15,9 @@ module BulmaFormBuilder
             checkbox = content_tag(:label, class: 'checkbox') do
               html = check_box_without_bulma(name, check_box_options, checked_value, unchecked_value)
               html.concat(check_box_label(name)) unless options[:skip_label]
-              html.concat(generate_error(name)) if options[:error_message]
               html
             end
-
-            if options[:help].present?
-              checkbox.concat(content_tag(:p, options[:help], class: 'help'))
-            end
-
+            checkbox.concat(field_help(name, options))
             checkbox
           end
         end
