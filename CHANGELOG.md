@@ -15,7 +15,7 @@
 
 ## 0.2.1
 
-- Support the check_box helpter option
+- Support the check_box helper option
 
 ## 0.2.0
 
