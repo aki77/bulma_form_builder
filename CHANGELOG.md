@@ -1,3 +1,8 @@
+## 0.4.0
+
+- Update dependency
+- Fix error display in check_box
+
 ## 0.3.1
 
 - Update dependency
@@ -10,7 +15,7 @@
 
 ## 0.2.1
 
-- Support the check_box helpter option
+- Support the check_box helper option
 
 ## 0.2.0
 
