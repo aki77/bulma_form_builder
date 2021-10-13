@@ -6,7 +6,7 @@ module BulmaFormBuilder
       options.reverse_merge!(builder: ::BulmaFormBuilder::FormBuilder)
 
       _with_bulma_form_field_error_proc do
-        form_with(options, &block)
+        form_with(**options, &block)
       end
     end
 
