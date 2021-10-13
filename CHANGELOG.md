@@ -1,4 +1,4 @@
-## 0.4.1
+## 0.4.2
 
 - Update dependency
 - Fix ruby@2.7 keyword warning
