@@ -1,5 +1,6 @@
 require 'bulma_form_builder/form_builder'
 require 'support/test_models'
+require 'support/shared_examples'
 
 RSpec.describe BulmaFormBuilder::FormBuilder, type: :helper do
   subject(:form) { described_class.new(:test_model, test_model, helper, {}) }
@@ -9,13 +10,13 @@ RSpec.describe BulmaFormBuilder::FormBuilder, type: :helper do
   describe '#submit' do
     subject(:field) { form.submit }
 
+    it_behaves_like 'an unlabelled field'
+
     it 'is valid HTML' do
       expect(Nokogiri.parse(field).errors).to be_empty
     end
 
-    it { expect(field).not_to have_tag('label') }
     it { expect(field).to have_tag('div', count: 1) }
-    it { expect(field).to have_tag('input', count: 1) }
 
     it 'has the submit button in a control div' do
       expect(field).to have_tag('div', with: { class: 'control' }) do
