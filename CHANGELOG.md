@@ -1,3 +1,7 @@
+## 0.4.3
+
+- Support Multiple select (#15)
+
 ## 0.4.2
 
 - Update dependency

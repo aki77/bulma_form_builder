@@ -11,6 +11,8 @@ module BulmaFormBuilder
 
           div_class = ['select']
           div_class.push('is-fullwidth') if options.delete(:fullwidth)
+          div_class.push('is-multiple') if html_options[:multiple]
+
           form_field_builder(method, options, html_options) do
             content_tag(:div, class: div_class.join(' ')) do
               select_without_bulma(method, choices, options, html_options, &block)
