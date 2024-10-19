@@ -23,6 +23,7 @@ module BulmaFormBuilder
     include BulmaFormBuilder::Inputs::NumberField
     include BulmaFormBuilder::Inputs::PasswordField
     include BulmaFormBuilder::Inputs::Select
+    include BulmaFormBuilder::Inputs::Submit
     include BulmaFormBuilder::Inputs::TextField
     include BulmaFormBuilder::Inputs::TextArea
     include BulmaFormBuilder::Inputs::CheckBox
