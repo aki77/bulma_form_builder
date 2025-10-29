@@ -1,3 +1,6 @@
+## 0.5.0
+- Drop support for Rails@7
+
 ## 0.4.3
 
 - Support Multiple select (#15)
